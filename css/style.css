@@ -1,0 +1,181 @@
+@font-face {font-family: "segoe-mt";
+  src: url("../css/fonts/segoe-mt.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/segoe-mt.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {font-family: "segoe-mt-bold";
+  src: url("../css/fonts/segoe-mt-bold 2.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/segoe-mt-bold 2.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+body{
+  background: #eee;
+}
+
+.pdd{padding: 0px 90px 0px 90px;}
+.pdd2{padding: 0px 140px 0px 140px;}
+
+
+.alertify-button-ok{
+  background-color: #0d4e58 !important;
+  border: 1px solid #48e0fe !important;
+}
+.alertify{border: 1px solid rgb(13, 78, 88) !important; font-family: "Quicksand-Regular" !important; font-size: 18px !important; }
+
+
+
+#main{
+  max-height: 567px;
+  /*height: 372px;*/
+  background-image: url('../images/fondo_contacto.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100% 100%;
+}
+
+/*header*/
+header {
+  height: 114px;
+  background-image: url('../images/header_fondo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.logo{
+  width: 260px;
+  max-height: 114px;
+}
+
+.redes{
+  list-style: none;
+  float: right;
+
+}
+.redes li{
+  display: inline-block;
+  padding: 5px 5px 5px 0px;
+  /*border-bottom: 2px solid #000;*/
+}
+.redes li img {width: 38px;padding-top: 21px;}
+
+
+
+form{
+  position: relative;
+  background: #242441;
+  border-radius: 30px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+}
+form p {
+  font-size: 18px;
+  color: #fff;
+  font-family: "segoe-mt-bold";
+  padding-top: 10px;
+  line-height: 18px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+form .input{
+  border-radius: 10px;
+  font-family: "segoe-mt";
+  color: #000;
+
+}
+form label {
+  color: #fff;
+  font-family: "segoe-mt";
+  font-size: 14px;
+}
+
+form textarea {
+  height: 90px;
+}
+
+form .termi{
+  color: #fff;
+  text-align: center;
+  font-family: "segoe-mt";
+}
+.boton{
+  background: #ff7132;
+  padding: 5px;
+  width: 220px;
+  border-radius: 15px;
+}
+form textarea {height: 75px !important;resize: none;}
+form button {
+  border:2px solid #fff !important;
+  background: #ff7132;
+  color: #fff;
+  font-family: "segoe-mt-bold";
+  font-size: 18px !important;
+  border-radius: 15px!important;
+  width: 100%;
+  padding: 5px 5px !important;
+
+}
+
+
+form button:hover {
+  color: #fff !important;
+}
+
+
+/**************************BENEFICIOS********************************/
+
+#beneficios{
+  height: 928px;
+  background-image: url('../images/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.flex{
+  position: relative;
+  top: 110px;
+}
+
+
+
+/*/*placeholder*/
+/*.input::-webkit-input-placeholder { color: darkgray; font-weight: bold;}
+.input:-moz-placeholder { color: darkgray; font-weight: bold;  }
+.input::-moz-placeholder { color: darkgray; font-weight: bold;  }
+.input:-ms-input-placeholder { color: darkgray; font-weight: bold;  }
+
+select::-webkit-input-placeholder { color: darkgray; font-weight: bold;}
+select:-moz-placeholder { color: darkgray; font-weight: bold;  }
+select::-moz-placeholder { color: darkgray; font-weight: bold;  }
+select:-ms-input-placeholder { color: darkgray; font-weight: bold; }*/
+
+
+
+@media screen and (max-width: 1199px){
+
+}
+
+@media screen and (max-width: 991px){
+
+
+
+}
+
+
+
+@media screen and (max-width: 767px){
+
+br{display: none;}
+
+
+}
+
+@media screen and (max-width: 350px){
+
+}
+
+
