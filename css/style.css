@@ -124,6 +124,13 @@ form button:hover {
   color: #fff !important;
 }
 
+/*Select Dinamicos*/
+#artes_carreras, #ciencias_carreras, #agro_carreras, #educacion_carreras
+,#sociales_carreras, #ingenierias_carreras, #salud_carreras, #doctorados,
+#economicas_carreras, #maestrias, #Especializaciones,  #posgrados
+{
+  display: none;
+}
 
 /**************************BENEFICIOS********************************/
 

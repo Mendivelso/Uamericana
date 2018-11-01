@@ -254,6 +254,7 @@
     <script type="text/javascript" src="js/validacion.js"></script>
     <script type="text/javascript" src="js/alertify.min.js"></script>
     <script type="text/javascript" src="js/valid.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 
     <script type="text/javascript" src="js/sweetalert.min.js"></script>
     <script type="text/javascript">

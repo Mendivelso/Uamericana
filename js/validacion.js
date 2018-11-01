@@ -1,3 +1,6 @@
+function redireccionarPagina() {
+  window.location = "https://www.bufa.es";
+}
 // VALIDACION FORMULARIO CONTACTO
 	$("#form_uni").validate({
   	rules:{
@@ -70,8 +73,6 @@
               var urlc = "../enviado.php";
             }
 
-
-
               $.ajax({
                 data: vData,
                 type: "POST",
@@ -81,13 +82,14 @@
               .done(function(data){
                 if (data.success)
                 {
-                  alert(data.message);
                   document.getElementById("form_uni").reset();
+                  alert(data.message);
+                  // window.location.replace ("http://es.stackoverflow.com");
+                  setTimeout("redireccionarPagina()", 5000);
                 }
               else
               {
                 alert(data.message);
-
                 //$("#txtBtn").removeAttr("disabled");
               }
             })
@@ -98,8 +100,3 @@
 
    }
 });
-
-
-
-
-
