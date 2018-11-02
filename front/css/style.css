@@ -1,0 +1,713 @@
+font-face {font-family: "segoe-mt";
+  src: url("../css/fonts/segoe-mt.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/segoe-mt.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+@font-face {font-family: "segoe-mt-bold";
+  src: url("../css/fonts/segoe-mt-bold 2.ttf") format("TTF"), /* chrome、firefox */
+  url("../css/fonts/segoe-mt-bold 2.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+body{
+  background: lightgray;
+}
+
+.pdd{padding: 0px 90px 0px 90px;}
+.pdd2{padding: 0px 140px 0px 140px;}
+
+
+.alertify-button-ok{
+  background-color: #012c55 !important;
+  border: 1px solid #0085ca !important;
+}
+.alertify{border: 1px solid rgb(13, 78, 88) !important; font-family: "segoe-mt" !important; font-size: 18px !important; }
+
+.btnes{
+      position: fixed;
+      top: 30%;
+      z-index: 99;
+   }
+
+  .logo{
+    position: relative;
+    top: 15px;
+  }
+
+.label1{
+    font-family: "segoe-mt-bold" !important;
+}
+
+.pse {
+    width: 230px;
+    height: 67px;
+    background: rgba(1, 33, 69, 0.85);
+    position: relative;
+    border-radius: 0px 5px 5px 0px;
+    left: -15px;
+    transition: ease 0.2s;
+    cursor: pointer;
+    border: solid 2px #004693;
+    margin-bottom: 10px;
+}
+.pse h3 {
+    font-size: 21px;
+    margin-bottom: -7px;
+    position: relative;
+        top: -17px;
+}
+
+.pse a {
+    color: #fff;
+}
+
+.gkCols {
+    margin: 0 -20px;
+    width: auto;
+}
+
+#gkBottom5 .box .header {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.white {
+  background-color: #fff;
+}
+
+
+#gkBottom5 .box .header {
+    padding: 10px 0 15px 0 !important;
+    text-align: left;
+}
+
+#gkBottom5 .box li {
+    border: none;
+    line-height: 1.8;
+    padding: 0;
+}
+#gkBottom5 .box a {
+    color: #666;
+}
+
+
+.gkCols > div {
+    float: left;
+    padding: 0 0px;
+    width: 171px;
+}
+
+
+.imagen:hover {
+
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;
+
+}
+
+
+#main{
+  max-height: 567px;
+  /*height: 372px;*/
+  background-image: url('../images/fondo_contacto.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100% 100%;
+}
+
+/*header*/
+header {
+  height: 114px;
+  background-image: url('../images/header_fondo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.logo{
+  width: 260px;
+  max-height: 114px;
+}
+
+.redes{
+  list-style: none;
+  float: right;
+
+}
+.redes li{
+  display: inline-block;
+  padding: 5px 5px 5px 0px;
+  /*border-bottom: 2px solid #000;*/
+}
+.redes li img {width: 38px;padding-top: 21px;}
+
+
+
+form{
+  position: relative;
+  background: rgba(1, 33, 69, 0.85);
+  border-radius: 30px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+}
+form p {
+  font-size: 18px;
+  color: #fff;
+  font-family: "segoe-mt-bold";
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+form .input{
+  border-radius: 10px;
+
+  color: #000;
+
+}
+form label {
+  color: #fff;
+  font-size: 14px;
+}
+
+form textarea {
+  height: 90px;
+}
+
+form .termi{
+  color: #fff;
+  text-align: center;
+  font-family: "segoe-mt-bold";
+}
+.boton{
+  background: #fcca64;
+  padding: 5px;
+  width: 220px;
+  border-radius: 15px;
+}
+
+.boton:hover {
+    background: #0a949c;
+}
+form textarea {height: 75px !important;resize: none;}
+form button {
+  border:2px solid #fff !important;
+  background:#fcca64;
+  color: #fff;
+  font-family: "segoe-mt-bold";
+  font-size: 18px !important;
+  border-radius: 15px!important;
+  width: 100%;
+  padding: 5px 5px !important;
+
+}
+
+
+form button:hover {
+  color: #fff !important;
+  background-color: #12969d;
+}
+
+/*Select Dinamicos*/
+#artes_carreras, #ciencias_carreras, #agro_carreras, #educacion_carreras
+,#sociales_carreras, #ingenierias_carreras, #salud_carreras, #doctorados,
+#economicas_carreras, #maestrias, #Especializaciones,  #posgrados
+{
+  display: none;
+}
+
+/**************************BENEFICIOS********************************/
+
+#beneficios{
+  height: 928px;
+  background-image: url('../images/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.flex{
+  position: relative;
+  top: 110px;
+}
+
+
+
+/*/*placeholder*/
+/*.input::-webkit-input-placeholder { color: darkgray; font-weight: bold;}
+.input:-moz-placeholder { color: darkgray; font-weight: bold;  }
+.input::-moz-placeholder { color: darkgray; font-weight: bold;  }
+.input:-ms-input-placeholder { color: darkgray; font-weight: bold;  }
+
+select::-webkit-input-placeholder { color: darkgray; font-weight: bold;}
+select:-moz-placeholder { color: darkgray; font-weight: bold;  }
+select::-moz-placeholder { color: darkgray; font-weight: bold;  }
+select:-ms-input-placeholder { color: darkgray; font-weight: bold; }*/
+
+/************************************** RESPONSIVE DESIGN********************************************************/
+    .btnes{display: none;}
+    .estudiantes_movil{display: none}
+
+@media screen and (max-width: 1199px){
+
+    .btnes{
+          position: fixed;
+          top: 65%;
+          z-index: 99;
+       }
+
+  .gkCols > div {
+      float: right;
+      padding: 0 0px;
+      width: 202px;
+  }
+
+  .title {
+      font-family: "segoe-mt-bold";
+      color: #242441;
+      font-size: 21px;
+      line-height: 32px;
+      text-align: left;
+      padding-top: 17px;
+      text-transform: uppercase;
+  }
+  .redes{
+    list-style: none;
+  }
+  .redes li{
+    display: inline-block;
+    padding: 5px 5px 5px 0px;
+    /*border-bottom: 2px solid #000;*/
+  }
+  .redes li img {width: 35px;padding-top: 21px;}
+
+  .line-redes{width: 140px; position: relative; top: -10px;}
+ #myCarousel {
+     position: relative;
+     top: 185px;
+     left: 0px;
+ }
+  .imgs {
+      float: right;
+      width: 100%;
+  }
+
+  #Beneficios {
+      height: 516px;
+      background-image: url(../images/Recurso-2.png);
+      background-repeat: no-repeat;
+      background-position: initial;
+      background-size: cover;
+  }
+
+    /*RESPONSIVE ARTES*/
+    #main_artes {
+      height: 510px;
+      background-image: url(../images/fondo_bailarina2.jpg);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 100%;
+  }
+  .gray {
+      background: #9da09f;
+      padding: 10px 24px 0px 15px;
+  }
+  .img_c{position: relative; top: 80px;}
+
+
+
+}
+
+@media screen and (max-width: 991px){
+
+  .pdd2 {
+      padding: 0px 40px 0px 40px;
+  }
+  .flex {
+      position: relative;
+      top: 144px;
+      width: 100%;
+  }
+  #beneficios {
+      height: auto;
+      background-image: url(../images/fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+  }
+
+  .vg {
+      padding-right: 0;
+      font-family: "segoe-mt";
+      font-size: 12px;
+      float: left;
+      padding-left: 12px;
+  }
+
+  .titulo {
+      font-family: "segoe-mt-bold";
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+  }
+  .none{display: none;}
+  #myCarousel {
+      position: relative;
+      top: 0px;
+      left: 0px;
+  }
+  #main {
+      height: auto;
+      background-image: url(../images/fondo_contacto.png);
+      background-repeat: no-repeat;
+      background-position: inherit;
+      background-size: cover;
+  }
+  form p {
+      font-size: 15px;
+      color: #fff;
+      font-family: "segoe-mt-bold";
+      padding-top: 10px;
+      line-height: 18px;
+  }
+
+  h1 {
+      font-size: 36px;
+  }
+  .p {
+      color: #000;
+      font-family: "segoe-mt-bold";
+      font-size: 11px;
+      line-height: 12px;
+  }
+  .bder {
+      border-right: 2px solid #fff;
+  }
+  .logo {
+      width: 210px;
+      float: none;
+  }
+  .imgs {
+      float: right;
+      width: 50%;
+  }
+  .redes li img {
+      width: 21px;
+      padding-top: 17px;
+  }
+  .title {
+      font-family: "segoe-mt-bold";
+      color: #242441;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: -webkit-right;
+      padding-top: 17px;
+  }
+  .galeria_movil{
+  display: block;
+      height: 158px;
+}
+.myCarousel{
+  display: none;
+}
+.vg {
+    padding-right: 0;
+    font-family: "segoe-mt";
+    font-size: 12px;
+}
+.line-redes {
+    width: 140px;
+    position: relative;
+    top: -10px;
+    display: none;
+}
+
+.bene {
+    float: right;
+    /* padding-left: 105px; */
+    width: 100%;
+}
+
+#Beneficios {
+    height: 557px;
+    background-image: url(../images/Recurso-2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+.ojo {
+    position: relative;
+    float: left;
+    width: 46px;
+}
+
+footer {
+    background: #9c9e9e;
+    padding: 0px 0px 5px 0px;
+}
+
+br{display: none;}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "segoe-mt";
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.img_c {
+    position: relative;
+    top: 0px;
+    width: auto;
+}
+
+}
+
+
+
+@media screen and (max-width: 767px){
+  #beneficios {
+      height: auto;
+      background-image: url(../images/fondo.jpg);
+       background-repeat: repeat-y;
+      background-size: contain;
+      background-position: right;
+  }
+  header {
+      height: auto;
+      margin: 0 auto;
+  }
+  .none{
+    display: block;
+  }
+  form p {
+      font-size: 22px;
+      color: #fff;
+      font-family: "segoe-mt-bold";
+      padding-top: 10px;
+      line-height: 22px;
+  }
+  .pdd {
+      padding: 0px 40px 0px 40px;
+  }
+  .pdd4 {
+      padding: 0px 20px 0px 20px;
+  }
+  .flex {
+      position: relative;
+      top: 0;
+      width: 100%;
+  }
+  .gkCols > div {
+      float: right;
+      padding: 0 23px;
+      width: 50%;
+  }
+  .estudiantes_movil{display: block}
+  #main {
+      height: auto;
+      max-height: none;
+      background-image: url(../images/fondo-2.png);
+      background-repeat: no-repeat;
+      background-position: inherit;
+      background-size: cover;
+  }
+  .logos_pie{width: 100%;}
+  .bene{width: auto; text-align: center; float: none;}
+  .redes2 {
+      list-style: none;
+      margin: 0px;
+      text-align: center;
+  }
+  h1{font-size: 31px;}
+  .bder2{
+    border-left: 0px solid #000;
+  }
+  .vg {
+      padding-right: 0;
+      font-family: "segoe-mt";
+      font-size: 12px;
+      float: none;
+  }
+  .redes {
+      list-style: none;
+      text-align: center;
+  }
+  br{display: none;}
+  .center{text-align: center !important;}
+  .logo {
+      width: 250px;
+      float: none;
+  }
+    .ojo_title {
+        text-align: left;
+        position: relative;
+        left: 12px;
+    }
+    .ojo_des {
+        text-align: left;
+        font-family: "segoe-mt";
+        color: #000;
+        line-height: 12px;
+        position: relative;
+        left: 12px;
+    }
+  .pL {
+      padding-top: 5px;
+      padding-bottom: 15px;
+  }
+  .title {
+      font-family: "segoe-mt-bold";
+      color: #242441;
+      font-size: 21px;
+      line-height: 25px;
+      text-align: center;
+      padding-top: 1px;
+  }
+  .gray {
+      background: #9da09f;
+      padding: 20px 55px 0px 34px;
+      height: 500px;
+  }
+  #Beneficios {
+      height: 557px;
+
+      background-repeat:repeat;
+      background-position: right;
+      background-size: cover;
+  }
+  .h {
+      height: 49px;
+      margin-top: 10px;
+      /* text-align: center !important; */
+      position: relative;
+      left: 139px;
+  }
+    #galeria_movil{
+    display: block;
+        height:auto;
+  }
+
+  .center{text-align: center !important;}
+
+
+
+
+
+}
+
+@media screen and (max-width: 630px){
+  .pdd {
+      padding: 0px 20px 0px 20px;
+  }
+  .pdd2 {
+      padding: 0px 20px 0px 20px;
+  }
+  .pdd4 {
+      padding: 0px 0px 0px 0px;
+  }
+  .h {
+      height: 49px;
+      margin-top: 10px;
+      /* text-align: center !important; */
+      position: relative;
+      left: 76px;
+  }
+  .gray {
+    background: #9da09f;
+    padding: 20px 24px 0px 34px;
+    height: auto;
+}
+  .bg_gray{
+    background-color:#9da09f;
+  }
+}
+
+
+@media screen and (max-width: 570px){
+    .gray {
+        background: #9da09f;
+        padding: 20px 24px 0px 34px;
+        height: 600px;
+    }
+    .h {
+        height: auto;
+    }
+    .bene {
+
+
+    }
+    .redes li img {
+        width: 24px;
+        padding-top: 17px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .col-xs-offset-2 {
+        margin-left: 5.66666667% !important;
+    }
+    .img_c{width: 100%;}
+
+}
+
+@media screen and (max-width: 454px){
+  .redes li img {
+      width: 23px;
+      padding-top: 17px;
+  }
+
+}
+
+
+@media screen and (max-width: 430px){
+  .logo {
+      width: 100%;
+      float: none;
+  }
+  .he{height: 0px;}
+  .gray {
+      background: #9da09f;
+      padding: 20px 24px 0px 34px;
+      height: 700px;
+  }
+  .h {
+      height: auto;
+      position: relative;
+      left: 35px;
+      width: 141%;
+  }
+  #Beneficios {
+      height: auto;
+      background-image: url(../images/blanco.png);
+      background-repeat:repeat;
+      background-position: right;
+      background-size: cover;
+  }
+  .bene{width: 100%;}
+}
+
+@media screen and (max-width: 310px){
+  .redes li img {
+      width: 23px;
+      padding-top: 2px;
+  }
+}
+
+
+

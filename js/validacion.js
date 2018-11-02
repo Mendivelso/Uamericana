@@ -1,102 +1,55 @@
-function redireccionarPagina() {
-  window.location = "https://www.bufa.es";
-}
 // VALIDACION FORMULARIO CONTACTO
-	$("#form_uni").validate({
+	$("#login").validate({
   	rules:{
-  		txtName:{
+  		txtUser:{
   			required: true
   		},
-      txtEmail:{
-        required:true,
-        email:true
-      },
-  		txtTel:{
-  			required:true,
-        number:true,
-        minlength:7,
-        maxlength:20
-  		},
-      txtComent:{
-        required:true,
-        maxlength:200
-      },
-      txtCar:{
-       required:true
+      txtPass:{
+        required:true
+
       }
 
   	},
   	messages:{
 
-  		txtName:{
-  			required: "Debe escribir su Nombre"
+  		txtUser:{
+  			required: "Debe escribir su Usuario"
   		},
-      txtEmail:{
-        required: "Debe escribir su E-mail",
-        email: "Su e-mail es incorrecto"
-      },
+      txtPass:{
+        required: "Debe escribir su Contraseña"
 
-
-  		txtTel:{
-  			required:"Este escribir su Teléfono",
-        number:"Ingrese solo números",
-       minlength: "Ingrese minimo 7 números",
-        maxlength: "Debe escribir Máximo 20 números"
-
-  		},
-      txtComent:{
-        required:"Este escribir su comentario",
-        maxlength:"Maxímo 200 Caracteres"
-      },
-
-      txtCar:{
-        required: "Debe seleccionar una carrera"
       }
-
 
   	 },
 
   submitHandler: function(form){
-            var urlc = "";
-            var vNom = $('#txtName').val();
-            var vEml = $('#txtEmail').val();
-            var vTel  = $('#txtTel').val();
-            var vMsj  = $('#txtComent').val();
-            var vCar  = $('#txtCar').val();
-            var vId  = $('#txtid').val();
+            var vUser = $('#txtUser').val();
+            var vPass = $('#txtPass').val();
 
-            var vData = {"txtName":vNom, "txtEmail":vEml, "txtTel":vTel, "txtComent":vMsj, "txtCar":vCar}
+            // var vData = {"accion":"login", "txtUser":vUser, "txtPass":vPass}
 
-            if (vId == 1) {
-              var urlc = "enviado.php";
-            }else{
-              var urlc = "../enviado.php";
-            }
-
-              $.ajax({
-                data: vData,
-                type: "POST",
-                datatype: "json",
-                url: urlc,
-               })
-              .done(function(data){
-                if (data.success)
-                {
-                  document.getElementById("form_uni").reset();
-                  alert(data.message);
-                  // window.location.replace ("http://es.stackoverflow.com");
-                  setTimeout("redireccionarPagina()", 5000);
+            $.ajax({
+              data: {"accion":"login", "txtUser":vUser, "txtPass":vPass},
+              type: "POST",
+              datatype: "json",
+              url:"controller/accessController.php",
+            })
+            .done(function(data){
+              if (data.success){
+                if (data.Perfil == 1) {
+                  document.location.href = "vista/home/";
+                }else{
+                  alertify.alert("Perfil Incorrecto");
+                  document.getElementById("form_zonasegura").reset();
                 }
-              else
-              {
-                alert(data.message);
-                //$("#txtBtn").removeAttr("disabled");
+              }
+              else{
+                alertify.alert(data.message);
+                document.getElementById("login").reset();
               }
             })
             .fail(function(data){
-              alert('algo ha sucedido al conectar con el servidor');
+              alert('Se ha presentado un problema al iniciar sesión');
             });
-
-
    }
 });
